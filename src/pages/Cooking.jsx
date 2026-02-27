@@ -107,7 +107,7 @@ export default function Cooking() {
     return (
         <div className="page-container" style={{ paddingBottom: '80px' }}>
             <header className="header" style={{ paddingTop: '1rem' }}>
-                <button onClick={() => navigate('/ingredients')} className="btn-icon">
+                <button onClick={() => navigate('../ingredients')} className="btn-icon">
                     <ArrowLeft size={24} />
                 </button>
                 <h1>Cocinando</h1>
