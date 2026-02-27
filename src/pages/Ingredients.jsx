@@ -15,7 +15,7 @@ export default function Ingredients() {
     return (
         <div className="page-container">
             <header className="header" style={{ paddingTop: '1rem' }}>
-                <button onClick={() => navigate('/')} className="btn-icon">
+                <button onClick={() => navigate('../')} className="btn-icon">
                     <ArrowLeft size={24} />
                 </button>
                 <h1>Ingredientes</h1>

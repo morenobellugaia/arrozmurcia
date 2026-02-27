@@ -24,7 +24,7 @@ export default function Home() {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    backgroundImage: 'url(/background.jpg)',
+                    backgroundImage: 'url(./background.jpg)',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     opacity: 0.3,
@@ -95,7 +95,7 @@ export default function Home() {
                 </div>
 
                 <button
-                    onClick={() => navigate('/ingredients')}
+                    onClick={() => navigate('./ingredients')}
                     className="btn-primary"
                     style={{ width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}
                 >
