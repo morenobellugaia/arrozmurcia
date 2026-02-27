@@ -4,16 +4,21 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: './arrozmurcia/',
+  // 1. Quita el punto inicial. Debe ser una ruta absoluta desde el dominio.
+  base: '/arrozmurcia/', 
+  
   plugins: [
     react(),
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
       manifest: {
-        name: 'Arroz Murcia Cooking Assistant',
+        name: 'Arroz Murcia',
         short_name: 'ArrozMurcia',
-        description: 'Cooking assistant for authentic Arroz y Costillejas',
+        description: 'Cocina autentico arroz de Murcia',
+        // 2. Añade explícitamente estas dos líneas para que la PWA sepa dónde empezar
+        start_url: '/arrozmurcia/',
+        scope: '/arrozmurcia/',
         theme_color: '#1a1a2e',
         background_color: '#1a1a2e',
         display: 'standalone',
