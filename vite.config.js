@@ -5,8 +5,8 @@ import { VitePWA } from 'vite-plugin-pwa'
 // https://vitejs.dev/config/
 export default defineConfig({
   // 1. Quita el punto inicial. Debe ser una ruta absoluta desde el dominio.
-  base: '/arrozmurcia/', 
-  
+  base: '/arrozmurcia/',
+
   plugins: [
     react(),
     VitePWA({
